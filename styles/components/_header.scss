@@ -1,0 +1,189 @@
+@import '../base/variables';
+@import '../base/mixins';
+@import '../base/media';
+
+.header {
+    height: 96px;
+    margin: 32px 0 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+
+    &-logotype {
+        width: 327px;
+        height: 96px;
+        margin: 0 0 0 64px;
+        display: flex;
+    }
+
+    &-logo {
+        min-width: 96px;
+        height: 96px;
+        margin: 0 8px 0 0;
+        position: relative;
+
+        &-img1 {
+            width: 96px;
+            height: 96px;
+            position: absolute;
+        }
+        &-img2 {
+            width: 82px;
+            height: 88px;
+            position: absolute;
+            top: 4px;
+            left: 7px;
+        }
+    }
+    &-name {
+        min-width: 223px;
+        height: 80px;
+        font-size: 64px;
+        color: $primaryColor;
+    }
+
+    &-info {
+        width: 518px;
+        height: 71px;
+        margin: 14px 0 0;
+        display: flex;
+        margin: 14px 58px 0 0;
+        z-index: 100;
+    
+    &-home {
+        width: 74px;
+        height: 47px;
+        margin: 12px 8px 12px 12px ;
+
+        &-text {
+            width: 50px;
+            height: 23px;
+            margin: 12px;
+
+            &-a {
+                color: rgba(238, 202, 252, 1);
+                font-size: $fontSize;
+                font-family: $primaryFont;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &-collections {
+        width: 185px;
+        height: 47px;
+        margin: 12px 8px 12px 0;
+        border-radius: 8px;
+
+        &-text {
+            width: 161px;
+            height: 23px;
+            margin: 12px;
+            
+            &-a {
+                color: $primaryColor;
+                font-size: $fontSize;
+                font-family: $primaryFont;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &-store {
+        width: 111px;
+        height: 47px;
+        margin: 12px 8px 12px 0;
+        display: flex;
+        text-align: center;
+        border-radius: 8px;
+        position: relative;
+
+        &-title {
+            width: 55px;
+            height: 23px;
+            margin: 12px 8px;
+            color: $primaryColor;
+            font-size: $fontSize;
+            font-family: $primaryFont;
+        }
+        &-icon {
+            width: 24px;
+            height: 23px;
+            margin: 12px 0 0;
+            color: $primaryColor;
+            font-size: 28px;
+            font-family: $primaryFont;
+            position: absolute;
+            top: -6px;
+            left: 67px;
+        }
+        &-dropdown {
+            width: 112px;
+            height: 160px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.42);
+            position: absolute;
+            top: 47px;
+            @include flex-box;
+            display: none;
+
+            &-people {
+                width: 59px;
+                height: 119px;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                &-person {
+                    font-family: $primaryFont;
+                    text-decoration: none;
+                    font-size: $fontSize;
+                    color: rgba(19, 22, 196, 1);
+                }
+            }
+        }
+    }
+
+    &-contacts {
+        width: 112px;
+        height: 47px;
+        margin: 12px 8px 12px 0;
+        border-radius: 8px;
+
+        &-text {
+            width: 88px;
+            height: 23px;
+            margin: 12px;
+        
+            &-a {
+                color: $primaryColor;
+                font-size: $fontSize;
+                font-family: $primaryFont;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+    }
+}
+}
+.burger {
+    width: 63px;
+    height: 65px;
+    font-size: 64px;
+    text-align: center;
+    color: $primaryColor;
+    display: none;
+    margin: 9px 0 0;
+}
+
+.hover:hover {
+    background-color: rgba(235, 0, 255, 0.24);
+    color: $textHover;
+    .hover-text {
+        color: $textHover;
+    }
+}
